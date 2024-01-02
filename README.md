@@ -18,8 +18,17 @@
 - After this configs we don't need to write tsc index.ts or anything. Just **tsc**.
 - The **sourceMap** property shows how our Typscript code maps to each Javascript code. It creates **index.js.map** file.
 - Debbugging: Add a **breakpoint** then go **Run and Debug**, create a **launch.json** file and select **Node.js**. In that file, between **program** and **outFiles** add a new task 👉 **"preLaunchTask": "tsc: build - tsconfig.json"**
+- **"noUnusedParameters": true** warns us about unused parameters.
+- **"noImplicitReturns": true** warn us about implicit return values.
+- **"noUnusedLocals": true** warn us about unused local variables.
 
 ## SETUP 🛠
 
 - To download TypeScript 👉 **npm install -g typescript**
 - To compile TypeScript 👉 **tsc index.ts**. It creates an index.js file.
+
+## BUILT-IN-TYPES
+
+- any, unkown, never, enum, tuple
+- If we don't set any value to a variable, typescript sees its type as any. This gonna break TypeScript analogy. Always try to avoid using **any** type of variable.
+- Also if we don't spesify any type, typescript can understand which type is it.
