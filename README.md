@@ -73,7 +73,7 @@
 
 ### **INTERSECTION TYPES** [ Combining Two or more different types ]
 
-- 👉 **type Draggable = { drag: () => void; };**   ////   **type Resizable = { resize: () => void; };**
+- 👉 **type Draggable = { drag: () => void; };** &nbsp; //// &nbsp; **type Resizable = { resize: () => void; };**
 - 👉 **type UIWidget = Draggable & Resizable;**
 - 👉 **let textBox: UIWidget = { drag: () => {}, resize: () => {}, };**
 - Like this example we can **combine different types** into same place.
