@@ -91,16 +91,54 @@ function calculateTax(income: number, taxYear = 2022): number {
 calculateTax(10_000);
 
 ////////////////////////////////////////////////
-//* OBJECTS IN TYPESCRIPT
-
-let employee: {
+//* TYPE ALIAS ( Takma ad yazma ) to make our object reusable, flexible and complies with the dry principle.
+// Simply to create instances of Employee
+type Employee = {
   readonly id: number;
   name: string;
-  // To add a method into objects
   retire: (date: Date) => void;
-} = { id: 1, name: "", retire: (date: Date) => console.log(date) };
+};
+
+//* OBJECTS IN TYPESCRIPT
+
+let employee: Employee = {
+  id: 1,
+  name: "",
+  retire: (date: Date) => console.log(date),
+};
 // Doesn't work in TypeScript if there is no name in object
 employee.name = "Kadir";
 
 //! To make it not allowed use readonly
 // employee.id = 0;
+
+////////////////////////////////////////////////
+//* UNION TYPES [ Different types handled on same place ]
+
+// Now in this example the parameter could be number or string. To work with both we need "Narrowing"
+function kgToLbs(weight: number | string): number {
+  // Narrowing (Daraltma)
+  if (typeof weight === "number") return weight * 2.2;
+  // We can't create another if instead of else, compiler warn us about that.
+  else return parseInt(weight) * 2.2;
+}
+
+kgToLbs(10);
+kgToLbs("10");
+
+//* INTERSECTION TYPES [ Combining Two or more different types ]
+
+type Draggable = {
+  drag: () => void;
+};
+
+type Resizable = {
+  resize: () => void;
+};
+
+type UIWidget = Draggable & Resizable;
+
+let textBox: UIWidget = {
+  drag: () => {},
+  resize: () => {},
+};
