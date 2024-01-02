@@ -28,7 +28,7 @@ function calculateTax(income, taxYear = 2022) {
     return income * 1.3;
 }
 calculateTax(10000);
-let employee = {
+const employee = {
     id: 1,
     name: "",
     retire: (date) => console.log(date),
@@ -42,4 +42,8 @@ function kgToLbs(weight) {
 }
 kgToLbs(10);
 kgToLbs("10");
+let textBox = {
+    drag: () => { },
+    resize: () => { },
+};
 //# sourceMappingURL=index.js.map

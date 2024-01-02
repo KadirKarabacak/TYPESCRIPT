@@ -101,7 +101,7 @@ type Employee = {
 
 //* OBJECTS IN TYPESCRIPT
 
-let employee: Employee = {
+const employee: Employee = {
   id: 1,
   name: "",
   retire: (date: Date) => console.log(date),
