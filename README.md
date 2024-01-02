@@ -10,14 +10,14 @@
 ## HOW TO CONFIGURE TYPESCRIPT COMPILER 🧰
 
 - First, use this command to create a new tsconfig.json file. 👉 **tsc --init**
-- And into tsconfig.json we can spesify the target for newest ES versions which changes about your project.
-- **rootDir** config targets our source file which includes TS files. We can name it **src**.
-- **outDir** config also targets our compiled files which is JS file. We can name it **dist**.
+- And into tsconfig.json we can spesify the **target for modern ES versions** which changes about your project.
+- **rootDir** config targets our source file which includes TS files. We can name it **src**. Simply input.
+- **outDir** config also targets our compiled files which is JS file. We can name it **dist**. Simply output.
 - **removeComments** removing our comments after compiled.
 - **noEmitOnError** when there is an error in our TS file, then stop compiling.
 - After this configs we don't need to write tsc index.ts or anything. Just **tsc**.
 - The **sourceMap** property shows how our Typscript code maps to each Javascript code. It creates **index.js.map** file.
-- Debbugging: Add a **breakpoint** then go **Run and Debug**, create a **launch.json** file and select **Node.js**. In that file, between **program** and **outFiles** add a new task 👉 **"preLaunchTask": "tsc: build - tsconfig.json"**
+- **Debbugging:** Add a **breakpoint** then go **Run and Debug**, create a **launch.json** file and select **Node.js**. In that file, between **program** and **outFiles** add a new task 👉 **"preLaunchTask": "tsc: build - tsconfig.json"**
 - **"noUnusedParameters": true** warns us about unused parameters.
 - **"noImplicitReturns": true** warn us about implicit return values.
 - **"noUnusedLocals": true** warn us about unused local variables.
