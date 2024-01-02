@@ -22,9 +22,9 @@ let is_read = false;
 
 // TypeScript warns us about documents type of "Any". We should avoid doin this.
 // Use default values
-function render(document = "Any") {
-  //   console.log(document);
-}
+// function render(document = "Any") {
+//   console.log(document);
+// }
 
 //////////////////////////////////////////////
 //* ARRAYS IN TYPESCRIPT
@@ -89,3 +89,18 @@ function calculateTax(income: number, taxYear = 2022): number {
 
 //? For some reason we want to use only income ? We must set a default value to taxYear into function and also set ? to taxYear
 calculateTax(10_000);
+
+////////////////////////////////////////////////
+//* OBJECTS IN TYPESCRIPT
+
+let employee: {
+  readonly id: number;
+  name: string;
+  // To add a method into objects
+  retire: (date: Date) => void;
+} = { id: 1, name: "", retire: (date: Date) => console.log(date) };
+// Doesn't work in TypeScript if there is no name in object
+employee.name = "Kadir";
+
+//! To make it not allowed use readonly
+// employee.id = 0;

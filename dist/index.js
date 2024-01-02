@@ -11,8 +11,6 @@ let level;
 let books = 123456789;
 let type = "Action";
 let is_read = false;
-function render(document = "Any") {
-}
 let numbersCorrect = [1, 2, 3];
 let numbers = [];
 numbers[0] = 5;
@@ -24,4 +22,10 @@ const medium = 2;
 const large = 3;
 let mySize = 2;
 console.log(mySize);
+function calculateTax(income, taxYear = 2022) {
+    if (taxYear < 2022)
+        return income * 1.2;
+    return income * 1.3;
+}
+calculateTax(10000);
 //# sourceMappingURL=index.js.map
