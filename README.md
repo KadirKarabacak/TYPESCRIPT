@@ -29,6 +29,6 @@
 
 ## BUILT-IN-TYPES
 
-- any, unkown, never, enum, tuple
-- If we don't set any value to a variable, typescript sees its type as any. This gonna break TypeScript analogy. Always try to avoid using **any** type of variable.
-- Also if we don't spesify any type, typescript can understand which type is it.
+- **any, unkown, never, enum, tuple**
+- If we don't set any value to a variable, typescript sees its **type as any**. This gonna break TypeScript analogy. Always try to avoid using **any** type of variable.
+- Also if we don't spesify any type, **Typescript can understand** which type is it.
