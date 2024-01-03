@@ -33,7 +33,7 @@
 
 ### **ARRAYS IN TYPESCRIPT [ ]**
 
-- Not allowed to pass different types of values 👉 **let array = [1, 2, "3"]** ❌
+- Not allowed to pass different types of values 👉 **let array = [ 1, 2, "3" ]** ❌
 - An array which could contain numbers 👉 **let numbers: number[ ] = [ ];**
 - An array which could contain strings 👉 **let numbers: string[ ] = [ ];**
 
