@@ -31,7 +31,7 @@
 - If we don't set any value to a variable, typescript sees its **type as any**. This gonna break TypeScript analogy. Always try to avoid using **any** type of variable.
 - Also if we don't spesify any type, **Typescript can understand** which type is it.
 
-### **ARRAYS IN TYPESCRIPT []**
+### **ARRAYS IN TYPESCRIPT [ ]**
 
 - Not allowed to pass different types of values 👉 **let array = [1, 2, "3"]** ❌
 - An array which could contain numbers 👉 **let numbers: number[] = [];**
