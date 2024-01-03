@@ -34,13 +34,13 @@
 ### **ARRAYS IN TYPESCRIPT [ ]**
 
 - Not allowed to pass different types of values 👉 **let array = [1, 2, "3"]** ❌
-- An array which could contain numbers 👉 **let numbers: number[] = [];**
-- An array which could contain strings 👉 **let numbers: string[] = [];**
+- An array which could contain numbers 👉 **let numbers: number[ ] = [ ];**
+- An array which could contain strings 👉 **let numbers: string[ ] = [ ];**
 
 ### **TUPLES IN TYPESCRIPT**
 
 - Tuples has fixed length and useful to store **"key, value"** couples. Try to avoid passing more than two value.
-- 👉 **let user: [number, string] = [5, "Kadir"];**
+- 👉 **let user: [ number, string ] = [ 5, "Kadir" ];**
 
 ### **ENUMS IN TYPESCRIPT**
 
