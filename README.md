@@ -25,8 +25,6 @@
 ## **SETUP 🛠**
 
 - To download TypeScript 👉 **npm install -g typescript**
-- To compile TypeScript 👉 **tsc index.ts**. It creates an index.js file.
-
 ## **BUILT-IN-TYPES**
 
 - **any, unkown, never, enum, tuple**
