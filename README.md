@@ -1,13 +1,13 @@
-# **TYPESCRIPT INTRODUCTION**
+# `TYPESCRIPT INTRODUCTION`
 
-## **WHAT IS TYPESCRIPT ❔**
+## `WHAT IS TYPESCRIPT ❔`
 
 - Typescript is build on top of the Javascript, it means everything Javascript and some more features on it.
 - Browsers doesn't understand TS code, so we need to compile it to JS.
 - On compile, our let or const variables turns to var keyword. Because TypeScript compiler using an older Javascript version ES5 as a default.
 - We can change the version of Javascript to compile modern versions.
 
-## **HOW TO CONFIGURE TYPESCRIPT COMPILER 🧰**
+## `HOW TO CONFIGURE TYPESCRIPT COMPILER 🧰`
 
 - First, use this command to create a new tsconfig.json file. 👉 **tsc --init**
 - And into tsconfig.json we can spesify the **target for modern ES versions** which changes about your project.
