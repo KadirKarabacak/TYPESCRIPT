@@ -22,22 +22,22 @@
 - **"noImplicitReturns": true** warn us about implicit return values.
 - **"noUnusedLocals": true** warn us about unused local variables.
 
-## **SETUP 🛠**
+## `SETUP 🛠`
 
 - To download TypeScript 👉 **npm install -g typescript**
-## **BUILT-IN-TYPES**
+## `BUILT-IN-TYPES`
 
 - **any, unkown, never, enum, tuple**
 - If we don't set any value to a variable, typescript sees its **type as any**. This gonna break TypeScript analogy. Always try to avoid using **any** type of variable.
 - Also if we don't spesify any type, **Typescript can understand** which type is it.
 
-### **ARRAYS IN TYPESCRIPT [ ]**
+### `ARRAYS IN TYPESCRIPT [ ]`
 
 - Not allowed to pass different types of values 👉 **let array = [ 1, 2, "3" ]** ❌
 - An array which could contain numbers 👉 **let numbers: number[ ] = [ ];**
 - An array which could contain strings 👉 **let numbers: string[ ] = [ ];**
 
-### **TUPLES IN TYPESCRIPT**
+### `TUPLES IN TYPESCRIPT`
 
 - Tuples has fixed length and useful to store **"key, value"** couples. Try to avoid passing more than two value.
 - 👉 **let user: [ number, string ] = [ 5, "Kadir" ];**
